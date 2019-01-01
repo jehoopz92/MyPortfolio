@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="google" content="notranslate" />
+	<link rel="stylesheet" href="../public/css/main.css" />
+	<link rel="shortcut icon" href="../public/images/icons8-laptop-coding-64.png" type="image/png">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+
+	<div id="top-nav">
+		<!-- Nav 2-->
+		<nav id="nav2">
+			<ul>
+				<li>
+					<div class="wrapper-menu">
+						<div class="line-menu half start"></div>
+						<div class="line-menu"></div>
+						<div class="line-menu half end"></div>
+					</div>
+				</li>
+			</ul>
+			<ul class="list-group" id="menu">
+				<li class="list-group-item active"><a href="/" class="active"><span class="icon fa-home"></span></a></li>
+				<li class="list-group-item"><a href="/gallery"><span class="icon fa-camera-retro"></span></a></li>
+				<li class="list-group-item"><a href="/about"><span class="icon fa-file-text-o"></span></a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="page-wrap">
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<li><a href="/" class="active"><span class="icon fa-home"></span></a></li>
+				<li><a href="/gallery"><span class="icon fa-camera-retro"></span></a></li>
+				<li><a href="/about"><span class="icon fa-file-text-o"></span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<section id="main">
+			{{# if error }}
+			{{# each error }}
+			<div class="error">
+				<p class="alert alert-error radius">{{msg}}</p>
+			</div>
+			<a href="#contact" onclick=" window.history.back();" class="button middle">Try again</a>
+			{{/each}}
+			{{/if}}
+
+			{{# if errors }}
+			{{# each errors }}
+			<div class="error">
+				<p class="alert alert-error radius">{{ this.msg}}</p>
+			</div>
+			{{/each}}
+			<a href="#contact" onclick=" window.history.back();" class="button middle">Try again</a>
+			{{/if}}
+
+			<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h1>Hey, I'm Jonathan</h1>
+					<p>A full stack web developer</p>
+					<ul class="actions">
+						<li><a href="#galleries" class="button alt scrolly big">Continue</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Gallery -->
+			<section id="galleries">
+
+				<!-- Photo Galleries -->
+				<div class="gallery">
+					<header class="special">
+						<h2>My Work</h2>
+					</header>
+					<div class="content">
+						<div class="media">
+							<a href="../public/images/fulls/gifsearcher.png"><img src="../public/images/thumbs/gifsearcher.png" alt="Gif Searcher"
+								 title="This was a little web project where I used an api to return gifs." /></a>
+						</div>
+						<div class="media">
+							<a href="../public/images/fulls/blog4.png"><img src="../public/images/thumbs/blog4.png" alt="Blog" title="This was built as part of a nodejs and adonis framework course I took." /></a>
+						</div>
+						<div class="media">
+							<a href="../public/images/fulls/gw.png"><img src="../public/images/thumbs/gw.png" alt="" title="I built this contact page for the church I attend." /></a>
+						</div>
+						<div class="media">
+							<a href="../public/images/fulls/hosting1.png"><img src="../public/images/thumbs/hosting1.png" alt="" title="This was built when I was learning css grid." /></a>
+						</div>
+						<div class="media">
+							<a href="../public/images/fulls/imagefinder1.png"><img src="../public/images/thumbs/imagefinder1.png" alt=""
+								 title="This was the first app I built using react" /></a>
+						</div>
+						<div class="media">
+							<a href="../public/images/fulls/devlogger.png"><img src="../public/images/thumbs/devlogger.png" alt="" title="This was a simple javascript app I built to learn about local storage." /></a>
+						</div>
+						<div class="media">
+							<a href="../public/images/fulls/travel.png"><img src="../public/images/thumbs/travel.png" alt="" title="This was built while learning Html and css." /></a>
+						</div>
+						<div class="media">
+							<a href="../public/images/fulls/webdev.png"><img src="../public/images/thumbs/webdev.png" alt="" title="This was built while getting ideas for a web development site." /></a>
+						</div>
+					</div>
+					<footer>
+						<a href="/gallery" class="button big">Full Gallery</a>
+					</footer>
+				</div>
+			</section>
+
+			<!-- Contact -->
+			<section id="contact">
+				<!-- Social -->
+				<div class="social column">
+					<h3>About Me</h3>
+					<small>
+						<bold>Skills</bold>
+					</small>
+					<p>My name is Jonathan. I am a self taught web dev. I have been actively studying code for almost two years now. I
+						started out learning just the basics with Html5 and Css3 and have progressed into Js and larger frameworks such
+						as Angular. I also have studied back end devlopment. I have made apps in node.js and .Net core. Despite learning
+						all of these technologies I am still not satisfied. I am constantly learning new things and progressing.</p>
+					<small>
+						<bold>My Personal Life</bold>
+					</small>
+					<p>Aside from coding, I have a wife and son. I enjoy watching horror movies and <span class="red">ALOT</span> of
+						Youtube. As far as music goes I listen to pretty much anything. I have played drums for almost 8 years and guitar
+						for about 4 years. I also love reading. I mostly read thrillers but I am always looking for tech books. That is a
+						little about me. If you would like to get in contact with me visit my social media or fill out the form to the
+						right to send me a message! </p>
+					<h3>Follow Me</h3>
+					<ul class="icons">
+						<li><a href="https://twitter.com/Jmoney0145" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/Drumminforlife" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/baseballsuperstar11/" target="_blank" class="icon fa-instagram"><span
+								 class="label">Instagram</span></a></li>
+					</ul>
+				</div>
+
+				<!-- Form -->
+				<div class="column">
+					<h3>Get in Touch</h3>
+					<div class="error" id="msg">
+						<p class="alert alert-error radius" id=""></p>
+					</div>
+					<form action="/send" method="POST" id="sendForm" name="form1">
+						<div class="field half first">
+							<label for="name">Name <span class="salmon">*</span></label>
+							<input name="name" id="name" type="text" placeholder="Name" value="{{name}}" required>
+						</div>
+						<div class="field half">
+							<label for="email">Email <span class="salmon">*</span></label>
+							<input name="email" id="email" type="email" placeholder="Email" {{email}} required>
+						</div>
+						<div class="field">
+							<label for="message">Message <span class="salmon">*</span></label>
+							<textarea name="message" id="message" rows="6" placeholder="Message" required></textarea {{message}}>
+						</div>
+						<ul class="actions">
+							<li>
+								<div class="g-recaptcha" data-sitekey="6Ldtn38UAAAAACHR-mwP51ojzA9sjmmk4kw8kZMD"></div>
+							</li>
+							<li><input value="Send Message" class="button" type="submit"></li>
+						</ul>
+					</form>
+				</div>
+
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					&copy;<a href="https://www.emerywd.com/">Emery Wed Design</a>.
+				</div>
+			</footer>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/jquery.poptrox.min.js"></script>
+	<script src="../public/js/jquery.scrolly.min.js"></script>
+	<script src="../public/js/skel.min.js"></script>
+	<script src="../public/js/util.js"></script>
+	<script src="../public/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="google" content="notranslate" />
+	<link rel="stylesheet" href="../public/css/main.css" />
+	<link rel="shortcut icon" href="../public/images/icons8-laptop-coding-64.png" type="image/png">
+</head>
+
+<body>
+
+	<div id="top-nav">
+		<!-- Nav 2-->
+		<nav id="nav2">
+			<ul>
+				<li><a><span class="icon fa-bars"></span></a></li>
+			</ul>
+			<ul class="list-group" id="menu">
+				<li class="list-group-item"><a href="/" class="active"><span class="icon fa-home"></span></a>Home</li>
+				<li class="list-group-item"><a href="/gallery"><span class="icon fa-camera-retro"></span></a>Gallery</li>
+				<li class="list-group-item"><a href="/about"><span class="icon fa-file-text-o"></span></a>About Me</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="page-wrap">
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<li><a href="/" class="active"><span class="icon fa-home"></span></a></li>
+				<li><a href="/gallery"><span class="icon fa-camera-retro"></span></a></li>
+				<li><a href="/about"><span class="icon fa-file-text-o"></span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<section id="main">
+
+			<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<p>Oops! Something went wrong. Please go back and try again!</p>
+					<ul class="actions">
+						<li><a href="/" class="button alt  big">Go Back</a></li>
+					</ul>
+				</div>
+			</section>
+
+			{{# each errors }}
+			<div class="error">
+				<p class="alert alert-danger">{{ this.msg }}</p>
+				<a href="#contact">try again</a>
+			</div>
+			{{/each}}
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					&copy;<a href="https://www.emerywd.com/">Emery Wed Design</a>.
+				</div>
+			</footer>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="../public/js/jquery.min.js"></script>
+	<script src="../public/js/jquery.poptrox.min.js"></script>
+	<script src="../public/js/jquery.scrolly.min.js"></script>
+	<script src="../public/js/skel.min.js"></script>
+	<script src="../public/js/util.js"></script>
+	<script src="../public/js/main.js"></script>
+
+</body>
+
+</html>
