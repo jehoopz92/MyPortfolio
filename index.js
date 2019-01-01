@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const path = require('path');
 const expressValidator = require('express-validator');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 const routes = require('./routes');
 
 const cookieParser = require('cookie-parser');
