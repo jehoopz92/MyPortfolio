@@ -1523,7 +1523,9 @@
 										opacity: 0;
 										height: 60px;
 										background-color: #0D1217;
-										transition: all 0.5s ease-in-out;
+										transition: all 330ms ease-in-out;
+										position: relative;
+										top: 35px;
 									}
 
 									.show {
